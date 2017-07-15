@@ -116,7 +116,7 @@
 //    // default
 //
 //    static {
-//        System.load("libSmartPublisher.so");
+//        System.loadLibrary("SmartPublisher");
 //    }
 //
 //    @Override
@@ -703,7 +703,7 @@
 //        if (pushType == PUSH_TYPE_CAMERA) {
 //            try {
 //                // User could check if the device has back/front camera here..
-//				/*
+//                /*
 //				 * int CammeraIndex = findBackCamera(); Log.i(TAG,
 //				 * "BackCamera: " + CammeraIndex);
 //				 *

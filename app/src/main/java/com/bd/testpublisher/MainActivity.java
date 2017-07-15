@@ -267,12 +267,12 @@ public class MainActivity extends Activity {
 					Log.i(TAG, "Start publisher..");
 					intent.putExtra(MonitorParamsKey.pushType, pushType);
 
-					int screenWidth  = getWindowManager().getDefaultDisplay().getWidth();       // 屏幕宽（像素，如：480px）
-					int screenHeight = getWindowManager().getDefaultDisplay().getHeight();      // 屏幕高（像素，如：800p）
+//					int screenWidth  = getWindowManager().getDefaultDisplay().getWidth();       // 屏幕宽（像素，如：480px）
+//					int screenHeight = getWindowManager().getDefaultDisplay().getHeight();      // 屏幕高（像素，如：800p）
 
 
-					intent.putExtra(MonitorParamsKey.camerawidth, screenHeight);
-					intent.putExtra(MonitorParamsKey.cameraheight, screenWidth);
+					intent.putExtra(MonitorParamsKey.camerawidth, videoWidth);
+					intent.putExtra(MonitorParamsKey.cameraheight, videoHight);
 
 					intent.putExtra(MonitorParamsKey.screenresolution, screenResolution);
 

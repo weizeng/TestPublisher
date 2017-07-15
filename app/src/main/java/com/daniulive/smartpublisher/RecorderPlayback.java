@@ -13,22 +13,23 @@
 //import android.app.Activity;
 //import android.content.Intent;
 //import android.os.Bundle;
-//import android.widget.VideoView;
-//import android.widget.TextView;
 //import android.util.Log;
 //import android.widget.MediaController;
+//import android.widget.TextView;
+//import android.widget.VideoView;
+//
+//import com.bd.testpublisher.R;
 //
 //public class RecorderPlayback extends Activity {
 //
-//	private final String Tag = "RecorderPlayback";
+//    private final String Tag = "RecorderPlayback";
 //
-//	private String recorderFilePath = null;
-//	private TextView filePathTextView = null;
-//	private VideoView playVideoView = null;
+//    private String recorderFilePath = null;
+//    private TextView filePathTextView = null;
+//    private VideoView playVideoView = null;
 //
-//	@Override
-//    public void onCreate(Bundle savedInstanceState)
-//    {
+//    @Override
+//    public void onCreate(Bundle savedInstanceState) {
 //        super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_recorder_playback);
 //
@@ -37,24 +38,20 @@
 //
 //
 //        filePathTextView = (TextView) findViewById(R.id.textViewRecoderPlaybackFilePath);
-//        if (recorderFilePath != null  )
-//        {
-//        	filePathTextView.setText(recorderFilePath);
-//        }
-//        else
-//        {
-//        	Log.i(Tag, "recorderFilePath is null");
+//        if (recorderFilePath != null) {
+//            filePathTextView.setText(recorderFilePath);
+//        } else {
+//            Log.i(Tag, "recorderFilePath is null");
 //        }
 //
 //
-//        playVideoView  = (VideoView) findViewById(R.id.VideoViewRecoderPlayback);
+//        playVideoView = (VideoView) findViewById(R.id.VideoViewRecoderPlayback);
 //
-//        if ( recorderFilePath != null && !recorderFilePath.isEmpty() )
-//        {
-//        	playVideoView.setVideoPath(recorderFilePath);
-//        	playVideoView.setMediaController(new MediaController(this));
-//        	playVideoView.requestFocus();
-//        	playVideoView.start();
+//        if (recorderFilePath != null && !recorderFilePath.isEmpty()) {
+//            playVideoView.setVideoPath(recorderFilePath);
+//            playVideoView.setMediaController(new MediaController(this));
+//            playVideoView.requestFocus();
+//            playVideoView.start();
 //
 //        }
 //    }

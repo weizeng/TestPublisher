@@ -26,7 +26,7 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.github.weizeng:SmartServicePublisher:1.1'
+    compile 'com.github.weizeng:SmartServicePublisher:1.2'
 //    compile files('libs/smartavengine.jar')
     testCompile 'junit:junit:4.12'
 }
